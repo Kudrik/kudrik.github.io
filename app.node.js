@@ -65,35 +65,35 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _reactDom = __webpack_require__(25);
+  var _reactDom = __webpack_require__(27);
 
   var _reactDom2 = _interopRequireDefault(_reactDom);
 
-  var _fbjsLibExecutionEnvironment = __webpack_require__(3);
+  var _fbjsLibExecutionEnvironment = __webpack_require__(4);
 
-  var _libLocation = __webpack_require__(9);
+  var _libLocation = __webpack_require__(11);
 
   var _libLocation2 = _interopRequireDefault(_libLocation);
 
-  var _componentsLayout = __webpack_require__(7);
+  var _componentsLayout = __webpack_require__(8);
 
   var _componentsLayout2 = _interopRequireDefault(_componentsLayout);
 
   var routes = {
     '/404': function _() {
-      return __webpack_require__(10);
-    }, '/500': function _() {
-      return __webpack_require__(11);
-    }, '/about': function about() {
       return __webpack_require__(12);
-    }, '/blog': function blog() {
+    }, '/500': function _() {
       return __webpack_require__(13);
-    }, '/blog/test-article-one': function blogTestArticleOne() {
+    }, '/about': function about() {
       return __webpack_require__(14);
-    }, '/blog/test-article-two': function blogTestArticleTwo() {
+    }, '/blog': function blog() {
       return __webpack_require__(15);
-    }, '/': function _() {
+    }, '/blog/test-article-one': function blogTestArticleOne() {
       return __webpack_require__(16);
+    }, '/blog/test-article-two': function blogTestArticleTwo() {
+      return __webpack_require__(17);
+    }, '/': function _() {
+      return __webpack_require__(18);
     } }; // Auto-generated on build. See tools/lib/routes-loader.js
 
   var route = function route(path, callback) {
@@ -223,10 +223,16 @@ module.exports =
 /* 3 */
 /***/ function(module, exports) {
 
-  module.exports = require("fbjs/lib/ExecutionEnvironment");
+  module.exports = require("classnames");
 
 /***/ },
 /* 4 */
+/***/ function(module, exports) {
+
+  module.exports = require("fbjs/lib/ExecutionEnvironment");
+
+/***/ },
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -251,13 +257,13 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _classnames = __webpack_require__(22);
+  var _classnames = __webpack_require__(3);
 
   var _classnames2 = _interopRequireDefault(_classnames);
 
-  __webpack_require__(17);
+  __webpack_require__(19);
 
-  var _MainHeader = __webpack_require__(8);
+  var _MainHeader = __webpack_require__(9);
 
   var _MainHeader2 = _interopRequireDefault(_MainHeader);
 
@@ -373,7 +379,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -396,7 +402,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(18);
+  __webpack_require__(20);
 
   var Footer = (function (_Component) {
     _inherits(Footer, _Component);
@@ -421,7 +427,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -453,7 +459,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _HeaderScss = __webpack_require__(19);
+  var _HeaderScss = __webpack_require__(21);
 
   var _HeaderScss2 = _interopRequireDefault(_HeaderScss);
 
@@ -480,7 +486,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -509,13 +515,13 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(20);
+  __webpack_require__(22);
 
-  var _Header = __webpack_require__(6);
+  var _Header = __webpack_require__(7);
 
   var _Header2 = _interopRequireDefault(_Header);
 
-  var _Footer = __webpack_require__(5);
+  var _Footer = __webpack_require__(6);
 
   var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -554,7 +560,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 8 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -577,7 +583,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(21);
+  __webpack_require__(23);
 
   var MainHeader = (function (_Component) {
     _inherits(MainHeader, _Component);
@@ -612,7 +618,96 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 9 */
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _classnames = __webpack_require__(3);
+
+  var _classnames2 = _interopRequireDefault(_classnames);
+
+  //import raf from '../../lib/requestAnimationFrame';
+  //import checkvisible from '../../lib/checkvisible';
+
+  __webpack_require__(24);
+
+  var PrizeCase = (function (_Component) {
+    _inherits(PrizeCase, _Component);
+
+    function PrizeCase(props) {
+      _classCallCheck(this, PrizeCase);
+
+      _get(Object.getPrototypeOf(PrizeCase.prototype), 'constructor', this).call(this, props);
+      this.state = { 'shown': false };
+    }
+
+    _createClass(PrizeCase, [{
+      key: 'render',
+      value: function render() {
+        var imgClasses = (0, _classnames2['default'])('prizeImg', {
+          'shown': this.state.shown
+        });
+        return _react2['default'].createElement(
+          'div',
+          { className: 'prizeCase' },
+          _react2['default'].createElement(
+            'p',
+            null,
+            _react2['default'].createElement(
+              'strong',
+              null,
+              'Top 3 Referrers '
+            ),
+            'of every week win',
+            _react2['default'].createElement('br', null),
+            '3 FREE Scentbird Colored Cases each'
+          )
+        );
+      }
+
+      //<img ref={(elem) => this.callRaf(elem)} className={imgClasses} src="/i/PrizeCase/prize.png" srcSet="/i/PrizeCase/prize.png, /i/PrizeCase/prize@2x.png 2x" alt="Scentbird Colored Cases" />
+      //callRaf(elem) {
+      //  console.log(elem);
+      //  console.log('added');
+      //  console.log(checkvisible(elem));
+      //  raf(() => {
+      //    console.log('piu piu piu');
+      //    //if (!this.state.shown) {
+      //    //  this.setState({
+      //    //    'shown': true
+      //    //  })
+      //    //}
+      //  }, elem)
+      //}
+    }]);
+
+    return PrizeCase;
+  })(_react.Component);
+
+  exports['default'] = PrizeCase;
+  module.exports = exports['default'];
+
+/***/ },
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -629,13 +724,13 @@ module.exports =
 
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-  var _fbjsLibExecutionEnvironment = __webpack_require__(3);
+  var _fbjsLibExecutionEnvironment = __webpack_require__(4);
 
-  var _historyLibCreateBrowserHistory = __webpack_require__(23);
+  var _historyLibCreateBrowserHistory = __webpack_require__(25);
 
   var _historyLibCreateBrowserHistory2 = _interopRequireDefault(_historyLibCreateBrowserHistory);
 
-  var _historyLibUseQueries = __webpack_require__(24);
+  var _historyLibUseQueries = __webpack_require__(26);
 
   var _historyLibUseQueries2 = _interopRequireDefault(_historyLibUseQueries);
 
@@ -645,7 +740,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 10 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -710,7 +805,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 11 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -781,7 +876,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 12 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -846,7 +941,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 13 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -911,7 +1006,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 14 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -976,7 +1071,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 15 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1041,7 +1136,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 16 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1064,9 +1159,13 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsAffiliateScheme = __webpack_require__(4);
+  var _componentsAffiliateScheme = __webpack_require__(5);
 
   var _componentsAffiliateScheme2 = _interopRequireDefault(_componentsAffiliateScheme);
+
+  var _componentsPrizeCase = __webpack_require__(10);
+
+  var _componentsPrizeCase2 = _interopRequireDefault(_componentsPrizeCase);
 
   var _default = (function (_Component) {
     _inherits(_default, _Component);
@@ -1083,7 +1182,8 @@ module.exports =
         return _react2['default'].createElement(
           'div',
           null,
-          _react2['default'].createElement(_componentsAffiliateScheme2['default'], null)
+          _react2['default'].createElement(_componentsAffiliateScheme2['default'], null),
+          _react2['default'].createElement(_componentsPrizeCase2['default'], null)
         );
       }
     }]);
@@ -1095,7 +1195,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 17 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1109,7 +1209,7 @@ module.exports =
 
 
 /***/ },
-/* 18 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1123,7 +1223,7 @@ module.exports =
 
 
 /***/ },
-/* 19 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1137,7 +1237,7 @@ module.exports =
 
 
 /***/ },
-/* 20 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1151,7 +1251,7 @@ module.exports =
 
 
 /***/ },
-/* 21 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1165,25 +1265,33 @@ module.exports =
 
 
 /***/ },
-/* 22 */
-/***/ function(module, exports) {
+/* 24 */
+/***/ function(module, exports, __webpack_require__) {
 
-  module.exports = require("classnames");
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.prizeCase {\n  font-size: 24px;\n  color: #2d2d2d;\n  border-bottom: 1px solid #979797;\n  overflow: hidden;\n}\n\n.prizeCase p {\n  position: relative;\n  display: block;\n  width: 992px;\n  margin: 0 auto;\n  padding: 67px 50px 51px 467px;\n  background: url(\"/i/PrizeCase/prize.png\") 113px bottom no-repeat;\n}\n\n.prizeCase strong {\n  font-weight: bold;\n  font-family: 'proxima_nova_semibold','Helvetica',sans-serif;\n}\n\n\n/*\n.prizeImg {\n  display: block;\n  width: 190px;\n  height: 149px;\n  position: absolute;\n  bottom: 0;\n  left: 44px;\n }\n*/\n\n\n@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {\n  .prizeCase p {\n    background-image: url(\"/i/PrizeCase/prize@2x.png\");\n    -webkit-background-size: 190px 149px;\n            background-size: 190px 149px;\n  }\n}\n\n@media (max-width: 992px) {\n  .prizeCase {\n    font-family: 'proxima_nova_light','Helvetica',sans-serif;\n  }\n  .prizeCase p {\n    width: auto;\n    padding: 67px 10px 51px 350px;\n  }\n}\n\n@media (max-width: 768px) {\n  .prizeCase p {\n    width: auto;\n    padding: 60px 5px 181px;\n    text-align: center;\n    background-position: 50% bottom;\n  }\n}\n", ""]);
+
+  // exports
+
 
 /***/ },
-/* 23 */
+/* 25 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/createBrowserHistory");
 
 /***/ },
-/* 24 */
+/* 26 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/useQueries");
 
 /***/ },
-/* 25 */
+/* 27 */
 /***/ function(module, exports) {
 
   module.exports = require("react-dom");
